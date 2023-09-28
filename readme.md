@@ -16,7 +16,7 @@ The project includes the following pages:
 
 ## Usage
 
-To run the project, open the `index.html` file in a web browser. Ensure that all the necessary files, including images and scripts, are in the correct directories. The `scripts` folder contains the JavaScript code for implementing interactive features within the application.
+To run the project, open the `index.html` file in a web browser. Ensure that all the necessary files, including images and scripts, are in the correct directories.
 
 ## Future Enhancements
 
