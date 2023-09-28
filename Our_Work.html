@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <!-- main file css -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- reset file css -->
+    <link rel="stylesheet" href="style/reset.css" />
+
+    <!-- Animation file css -->
+    <link rel="stylesheet" href="style/Animation.css" />
+
+    <style>
+        #main-our {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+
+        }
+
+        .main-our {
+            width: 700px;
+            height: 900px;
+            margin: auto;
+            text-align: center;
+            background-color: #07192f;
+            border: 2px solid #283d57;
+            border-radius: 10px;
+        }
+
+        .project {
+            width: 600px;
+            height: 100px;
+            background-color: #283d57;
+            margin: 50px 0 10px 50px;
+            border-radius: 10px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 26px;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+
+    <!-- main script file -->
+    <script src="scripts/script.js"></script>
+
+    <title>Our Work</title>
+</head>
+
+<body>
+    <!-- Start Animation css -->
+    <div id="main-our">
+        <!-- Start main-our div -->
+        <div class="main-our">
+            <h1>Our Projects</h1>
+
+            <!-- Start webdev_Project -->
+            <div class="project">
+                <a target="_blank" href="https://github.com/johnuberbacher">Projects in Web Development</a>
+            </div>
+            <!-- End webdev_Project -->
+
+            <!-- Start datanalyst_Project -->
+            <div class="project">
+                <a target="_blank"
+                    href="https://github.com/aliahmad-1987/DataAnalystProjectFromScratch_PBI_SQL_SalesAnalysis/blob/main/Episode%206%20-%20Cover%20Letter.pdf">Projects
+                    in Data Analysts</a>
+            </div>
+            <!-- End datanalyst_Project -->
+
+            <!-- Start AiExpert_Project -->
+            <div class="project">
+                <a target="_blank" href="https://github.com/h1st-ai">Projects in AI</a>
+            </div>
+            <!-- End AiExpert_Project -->
+
+            <!-- Start Cybersecrity_Project -->
+            <div class="project">
+                <a target="_blank" href="https://github.com/WerWolv">Projects in Cybersecrity</a>
+            </div>
+            <!-- End Cybersecrity_Project -->
+
+            <!-- Start Gamedev_Project -->
+            <div class="project">
+                <a target="_blank" href="https://github.com/BayatGames">Projects in game development</a>
+            </div>
+            <!-- End Gamedev_Project -->
+
+            <!-- Start main-our div -->
+        </div>
+    </div>
+    <!-- Animation script Start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#main-our",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+        });
+    </script>
+    <!-- End Animation css -->
+</body>
+
+</html>

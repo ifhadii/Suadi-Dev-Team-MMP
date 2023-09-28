@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- main file css -->
+  <link rel="stylesheet" href="style/style.css" />
+
+  <!-- reset file css -->
+  <link rel="stylesheet" href="style/reset.css" />
+
+  <!-- Animation file css -->
+  <link rel="stylesheet" href="style/Animation.css" />
+
+  <!-- main script file -->
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <div id="main-team">
+    <br />
+    <h2>Our Specialists</h2>
+    <div class="main-team">
+
+      <!-- start fahad -->
+      <a href="/html/fahad.html" target="_blank">
+        <div class="cards-team">
+          <h3>Web<br />Development</h3>
+          <img src="img/cards/coding.png" alt="webdev.jpg" />
+        </div>
+      </a>
+      <!-- end fahad -->
+
+      <!-- start abd -->
+      <a href="/html/abduallah.html" target="_blank">
+        <div class="cards-team">
+          <h3>Data<br />Analysis</h3>
+          <img src="img/cards/dashboard.png" alt="webdev.jpg" />
+        </div>
+      </a>
+      <!-- end abd -->
+
+      <!-- start kha -->
+      <a href="/html/khaled.html" target="_blank">
+        <div class="cards-team">
+          <h3>AI<br />Experts</h3>
+          <img src="img/cards/900961.png" alt="webdev.jpg" />
+        </div>
+      </a>
+      <!-- end kha -->
+
+      <!-- start sli -->
+      <a href="/html/silman.html" target="_blank">
+        <div class="cards-team">
+          <h3>Game<br />Development</h3>
+          <img src="img/cards/console.png" alt="webdev.jpg" />
+        </div>
+      </a>
+      <!-- end sli -->
+
+      <!-- start mhoa -->
+
+      <a href="/html/mohamed.html" target="_blank">
+
+        <div class="cards-team">
+          <h3>Cyber<br />Security</h3>
+          <img src="img/cards/cyber-security.png" alt="webdev.jpg" />
+        </div>
+      </a>
+      <!-- end mhoa -->
+    </div>
+  </div>
+  <!-- Animation script Start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    VANTA.BIRDS({
+      el: "#main-team",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+    });
+  </script>
+  <!-- End Animation css -->
+</body>
+
+</html>

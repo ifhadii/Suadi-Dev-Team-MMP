@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main file css -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- reset file css -->
+    <link rel="stylesheet" href="style/reset.css" />
+
+    <!-- Animation file css -->
+    <link rel="stylesheet" href="style/Animation.css" />
+
+    <!-- main script file -->
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div id="main-contact"><br>
+      <div class="main-contact">
+        <h1>Contact Form</h1>
+        <input type="text" placeholder="Email" />
+        <input type="number" placeholder="Phone" />
+        <textarea
+          name="message"
+          id="area"
+          cols="30"
+          rows="10"
+          placeholder="Please Type What You Need"
+        ></textarea>
+        <button style="padding: 10px">Send</button>
+      </div>
+    </div>
+    <!-- Animation script Start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#main-contact",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+    <!-- End Animation css -->
+  </body>
+</html>
