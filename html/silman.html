@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employee</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      overflow-x: hidden;
+      font-family: "jetbrains mono";
+    }
+
+    #main-employees {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .main-employees {
+      color: white;
+      width: 1000px;
+      height: 500px;
+      padding: 20px;
+      background-color: #07192f;
+      border: 2px #283d57 solid;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+
+    }
+
+    /* .main-employees:hover {
+      transform: scale(1.2);
+    } */
+
+    img {
+      width: 490px;
+      height: 500px;
+      background-color: #283d57;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+
+    button {
+      width: 400px;
+      height: 40px;
+      color: white;
+      margin-top: 100px;
+      background-color: #07192f;
+      border: none;
+      border: 2px solid #283d57;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: #07192f;
+      font-weight: bold;
+      background-color: #283d57;
+      border: 2px solid white;
+    }
+
+    #pdf-container {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    iframe {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #pdf-container.show {
+      display: block;
+      opacity: 1;
+    }
+
+    iframe.show {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* Start Responsive part */
+    @media only screen and (max-width: 768px) {
+      #main-employees {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-employees {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      button {
+        width: 80%;
+        margin: 20px 0;
+      }
+    }
+
+    /* End Responsive part */
+  </style>
+  <!-- reset file css -->
+  <link rel="stylesheet" href="style/reset.css" />
+
+  <!-- Animation file css -->
+  <link rel="stylesheet" href="style/Animation.css" />
+
+  <!-- main script file -->
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <div id="main-employees">
+    <img src="/img/cards/coding.png" alt="web.jpg" />
+    <div class="main-employees">
+      <div class="text">
+        <h1>Game Developer</h1>
+        <h3>Salman Mufreh Ali Haroobi</h3>
+        <p>
+          Salman Mufreh Ali Haroobi is a talented game developer with a passion for creating immersive and engaging
+          gaming experiences. He has a strong background in computer science and programming, and has honed his skills
+          over the years to become a highly skilled game developer.
+
+          Salman Mufreh Ali Haroobi has worked on a variety of game development projects, ranging from mobile games to
+          console games. He is known for his ability to create games that are not only visually stunning, but also
+          highly interactive and engaging.
+
+          One of Salman Mufreh Ali Haroobi's key strengths is his ability to work collaboratively with other developers
+          and designers. He is a strong communicator and is able to effectively convey his ideas and vision to others on
+          the team. This has helped him to create games that are not only technically sound, but also highly creative
+          and innovative.
+
+          In addition to his technical skills, Salman Mufreh Ali Haroobi is also known for his strong work ethic and
+          dedication to his craft. He is constantly seeking to improve his skills and stay up-to-date with the latest
+          trends and technologies in the gaming industry.
+
+          Overall, Salman Mufreh Ali Haroobi is a highly talented game developer who is dedicated to creating games that
+          are both fun and challenging. His passion for gaming and his commitment to excellence make him a valuable
+          asset to any game development team.
+        </p>
+      </div>
+      <button id="pdf-button">VIEW MY RESUME</button>
+      <div id="pdf-container"></div>
+    </div>
+  </div>
+  <!-- Start Script PDF -->
+  <script>
+    const pdfButton = document.getElementById("pdf-button");
+    const pdfContainer = document.getElementById("pdf-container");
+
+    pdfButton.addEventListener("click", function () {
+      const iframe = document.createElement("iframe");
+      iframe.src = "../Resume/CV.pdf.pdf";
+      pdfContainer.appendChild(iframe);
+      pdfContainer.classList.add("show");
+      iframe.classList.add("show");
+    });
+
+    pdfContainer.addEventListener("click", function () {
+      pdfContainer.classList.remove("show");
+      pdfContainer.innerHTML = "";
+    });
+
+  </script>
+  <!-- End Script PDF -->
+  <!-- Animation script Start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    VANTA.BIRDS({
+      el: "#main-employees",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+    });
+  </script>
+  <!-- End Animation css -->
+</body>
+
+</html>
