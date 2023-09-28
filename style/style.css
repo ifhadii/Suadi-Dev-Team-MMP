@@ -1,0 +1,210 @@
+/* This File Is The Main Style Css */
+
+body {
+  /* start style body */
+  font-family: "jetbrains mono";
+  color: white;
+  overflow: hidden;
+}
+
+/* start style animation main */
+#main-index {
+  height: 100vh;
+  width: 100vw;
+}
+/* end  style animation main */
+
+/* start style main */
+.main-index {
+  color: white;
+  padding: 50px;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 29px;
+}
+
+/* end style main */
+
+/* start style navigation */
+nav {
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+  margin: auto;
+}
+
+nav a {
+  text-decoration: none;
+  border: white 2px solid;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #07192f;
+  background-color: white;
+}
+
+.note {
+  width: 1400px;
+  height: 500px;
+}
+/* end style navigation */
+
+/* start style about-us page */
+
+#main-us {
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-us {
+  padding: 30px;
+  font-size: 12px;
+}
+
+.background {
+  width: 800px;
+  height: 600px;
+  background-color: #07192f;
+  margin: auto;
+  font-size: 18px;
+  border: #283d57 2px solid;
+  border-radius: 10px;
+}
+
+/* end style about-us page */
+
+/* start style Contact Us page */
+
+#main-contact {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-contact {
+  width: 550px;
+  height: 650px;
+  margin: auto;
+  background-color: #07192f;
+  border-radius: 10px;
+  border: 2px #283d57 solid;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+}
+
+textarea,
+input {
+  outline: none;
+  border-radius: 6px;
+  color: #07192f;
+  font-size: 20px;
+  background-color: aliceblue;
+}
+
+input:hover {
+  border: white 2px solid;
+  background-color: white;
+}
+
+textarea:hover {
+  border: white 2px solid;
+  background-color: white;
+}
+
+button {
+  width: 500px;
+  height: 50px;
+  background-color: #07192f;
+  color: white;
+  border: none;
+  border: 1px white solid;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: white;
+  color: #07192f;
+}
+/* end style Contact Us page */
+
+/* start style Team Page */
+#main-team {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-team {
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+#main-team h2 {
+  text-align: center;
+}
+
+.cards-team {
+  width: 179px;
+  height: 230px;
+  margin: 25px;
+  background-color: #07192f;
+  border: #283d57 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cards-team:hover {
+  transform: scale(1.1);
+}
+
+.cards-team img {
+  width: 150px;
+  height: 110px;
+  padding: 10px;
+  background-color: #283d57;
+  border: 2px white solid;
+  border-radius: 10px;
+  
+}
+
+a {
+    text-decoration: none;  
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-team {
+    width: 100%;
+  }
+}
+/* end style Team Page */
