@@ -1,6 +1,6 @@
 # Multimedia Application Project
 
-This beginner-level multimedia application project aims to provide a user-friendly interface 
+Multimedia application project aims to provide a user-friendly interface 
 for basic multimedia interaction. It focuses on image display and PDF file rendering, serving as a foundation 
 for learning multimedia content presentation with potential for future enhancements.
 
